@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ruangKeluarga</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-600">
+    <div class="grid grid-cols-2 grid-rows-2 gap-4 pt-5 place-items-center">
+        <!-- lampu 1 -->
+        <div class="flex flex-col gap-2 items-center">
+            <img src="assets/images/off.gif" alt="" id="rK1">
+            <label for="toggle-rk1" class="inline-flex items-center relative cursor-pointer">
+                <input type="checkbox" id="toggle-rk1" class="sr-only peer" onchange="saklar()">
+                <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                    dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+                    rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] 
+                    after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border 
+                    after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 
+                    dark:peer-checked:bg-blue-600">
+                </div>
+                <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"></span>
+            </label>
+        </div>
+
+        <!-- lampu 2 -->
+        <div class="flex flex-col gap-2 items-center">
+            <img src="assets/images/off.gif" alt="" id="rK2">
+            <label for="toggle-rk2" class="inline-flex items-center relative cursor-pointer">
+                <input type="checkbox" id="toggle-rk2" class="sr-only peer" onchange="saklar()">
+                <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                    dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+                    rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] 
+                    after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border 
+                    after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 
+                    dark:peer-checked:bg-blue-600">
+                </div>
+                <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"></span>
+            </label>
+        </div>
+
+        <!-- lampu 3 -->
+        <div class="flex flex-col gap-2 items-center">
+            <img src="assets/images/off.gif" alt="" id="rK3">
+            <label for="toggle-rk3" class="inline-flex items-center relative cursor-pointer">
+                <input type="checkbox" id="toggle-rk3" class="sr-only peer" onchange="saklar()">
+                <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                    dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+                    rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] 
+                    after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border 
+                    after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 
+                    dark:peer-checked:bg-blue-600">
+                </div>
+                <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"></span>
+            </label>
+        </div>
+    </div>
+
+    <!-- nyalakan semua -->
+    <div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
+        <div>
+            <button type="button" id="nyalakanSemua" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg 
+                text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none 
+                dark:focus:ring-blue-800">NYALAKAN SEMUA</button>
+        </div>
+
+        <!-- matikan semua -->
+        <div>
+            <button type="button" id="matikanSemua" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg 
+                text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none 
+                dark:focus:ring-blue-800">MATIKAN SEMUA</button>
+        </div>
+
+        <!-- backward -->
+        <div>
+            <button type="button" id="backward" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg 
+                text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none 
+                dark:focus:ring-blue-800"><a href="index.html">KEMBALI</a></button>
+        </div>
+    </div>
+
+    <!-- end all -->
+
+
+
+    <!-- script js -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="saklarRK.js"></script>
+</body>
+
+</html>
